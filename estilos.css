@@ -1,0 +1,25 @@
+body{
+    background-color: #f7b5ce;
+}
+h1{
+    color: #ff4d6d;
+    text-align: center;
+}
+#calculadora{
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.suma{
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
