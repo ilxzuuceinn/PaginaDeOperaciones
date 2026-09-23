@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiplicaciones</title>
     <link rel="stylesheet" href="estilos.css">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
@@ -39,69 +39,114 @@
     </nav>
     <h2>Multiplicaciones</h2>
     <img src="img/calculadora.png" alt="Calculadora" width="200" height="200" id="calculadora">
-     <div class="info">
-            <h3>¿Qué es la multiplicación?</h3>
-            <br>
-            <p>La multiplicación es la operación matemática que consiste en sumar un número tantas veces como indica otro número. 
+    <div class="info">
+        <h3>¿Qué es la multiplicación?</h3>
+        <br>
+        <p>La multiplicación es la operación matemática que consiste en sumar un número tantas veces como indica otro
+            número.
             Es una forma abreviada de realizar sumas repetidas.</p>
-            <h3>Ejemplo:</h3>
-            <p>Si tenemos 3 manzanas y nos quitan dan 2, en total tendremos 1 manzana. 
-                Esto se puede expresar como: 3 * 2 = 6.</p>
+        <h3>Ejemplo:</h3>
+        <p>Si tenemos 3 manzanas y nos quitan dan 2, en total tendremos 1 manzana.
+            Esto se puede expresar como: 3 * 2 = 6.</p>
     </div>
     <br>
     <div class="info2">
         <h3>Propiedades de la multiplicación</h3>
         <br>
-        <p>La multiplicación tiene varias propiedades importantes que la hacen útil en matemáticas. 
+        <p>La multiplicación tiene varias propiedades importantes que la hacen útil en matemáticas.
             Algunas de las propiedades más destacadas son:</p>
         <ul>
-            <li> Es Conmutativa (El orden no importa): En la multiplicación, cambiar el orden de los números no altera el resultado. \(a * b = b * a\)
+            <li> Es Conmutativa (El orden no importa): En la multiplicación, cambiar el orden de los números no altera
+                el resultado. \(a * b = b * a\)
                 Ejemplo: (7 * 3 = 21), pero (3 * 7 = 21)</li>
-            <li>Es Asociativa (El agrupamiento no importa): Puedes agrupar los términos como quieras usando paréntesis, ya que el resultado no cambia.
+            <li>Es Asociativa (El agrupamiento no importa): Puedes agrupar los términos como quieras usando paréntesis,
+                ya que el resultado no cambia.
                 Ejemplo:(10 * (5 * 2) = 10 * 10 = 100)</li>
-            <li>Propiedad del Elemento Neutro (El Cero es asimétrico): El cero solo funciona como elemento neutro si se encuentra en el sustraendo (el segundo número), pero no si está en el minuendo (el primer número).
+            <li>Propiedad del Elemento Neutro (El Cero es asimétrico): El cero solo funciona como elemento neutro si se
+                encuentra en el sustraendo (el segundo número), pero no si está en el minuendo (el primer número).
                 Ejemplo: \(8 * 0 = 0\).
-                 Ejemplo: \(0 * 8 = 0\).</li>
+                Ejemplo: \(0 * 8 = 0\).</li>
         </ul>
 
     </div>
     <div class="info3">
         <h3>Importancia de la multiplicación</h3>
         <br>
-        <p>La importancia de la multiplicación radica en que es la herramienta matemática fundamental 
-            para medir la diferencia, el cambio y la escasez. Si la suma es la operación de la 
-            acumulación y el crecimiento, la multiplicación es la operación del equilibrio, el control y 
+        <p>La importancia de la multiplicación radica en que es la herramienta matemática fundamental
+            para medir la diferencia, el cambio y la escasez. Si la suma es la operación de la
+            acumulación y el crecimiento, la multiplicación es la operación del equilibrio, el control y
             la comparación.</p>
     </div>
-    <center><div class="suma">
-        <h2>Multiplicaciones</h2>
-        <center><input type="text" id="pantalla" readonly></center>
-        <button onclick="Agregar(1)">1</button>
-        <button onclick="Agregar(2)">2</button>
-        <button onclick="Agregar(3)">3</button>
-        <br>
-        <button onclick="Agregar(4)">4</button>
-        <button onclick="Agregar(5)">5</button>
-        <button onclick="Agregar(6)">6</button>
-        <br>
-        <button onclick="Agregar(7)">7</button>
-        <button onclick="Agregar(8)">8</button>
-        <button onclick="Agregar(9)">9</button>
-        <br>
-        <button onclick="Agregar('*')">*</button>
-        <button onclick="Agregar(0)">0</button>
-        <button onclick="Calcular()">=</button>
-        <br>
-        <button onclick="Eliminar()">Eliminar</button>
-    </div></center>
+    <center>
+        <div class="suma">
+            <h2>Multiplicaciones</h2>
+            <center><input type="text" id="pantalla" readonly></center>
+            <button onclick="Agregar(1)">1</button>
+            <button onclick="Agregar(2)">2</button>
+            <button onclick="Agregar(3)">3</button>
+            <br>
+            <button onclick="Agregar(4)">4</button>
+            <button onclick="Agregar(5)">5</button>
+            <button onclick="Agregar(6)">6</button>
+            <br>
+            <button onclick="Agregar(7)">7</button>
+            <button onclick="Agregar(8)">8</button>
+            <button onclick="Agregar(9)">9</button>
+            <br>
+            <button onclick="Agregar('*')">*</button>
+            <button onclick="Agregar(0)">0</button>
+            <button onclick="Calcular()">=</button>
+            <br>
+            <button onclick="Eliminar()">Eliminar</button>
+        </div>
+    </center>
 
 
-
+    <div class="carrusel">
+        <div class="carrusel-items">
+            <div class="carrusel-item">
+                <img src="https://i.ytimg.com/vi/YFtEaVw5k1A/maxresdefault.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://www.conmishijos.com/uploads/tareas_escolares/tablasmultiplicar.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://auladigitalxxi.wordpress.com/wp-content/uploads/2024/12/funciones-de-la-multiplicacion.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTSADBtnwGGg4u6KOf_7l4eCEnlrEqOU3dZ49wN_cyyA&s=10" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://i0.wp.com/lasmatesfaciles.com/wp-content/uploads/2024/09/aprende-a-multiplicar.png?fit=1864%2C1100&ssl=1" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://i.ytimg.com/vi/CGXHrIp7Dpw/mqdefault.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://i.ytimg.com/vi/YFtEaVw5k1A/maxresdefault.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://www.conmishijos.com/uploads/tareas_escolares/tablasmultiplicar.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://auladigitalxxi.wordpress.com/wp-content/uploads/2024/12/funciones-de-la-multiplicacion.jpg" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTSADBtnwGGg4u6KOf_7l4eCEnlrEqOU3dZ49wN_cyyA&s=10" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://i0.wp.com/lasmatesfaciles.com/wp-content/uploads/2024/09/aprende-a-multiplicar.png?fit=1864%2C1100&ssl=1" alt="" />
+            </div>
+            <div class="carrusel-item">
+                <img src="https://i.ytimg.com/vi/CGXHrIp7Dpw/mqdefault.jpg" alt="" />
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-<script src="codigo.js"></script>
+    <script src="codigo.js"></script>
 </body>
 
 </html>
